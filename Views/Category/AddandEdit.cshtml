@@ -1,0 +1,157 @@
+﻿@model Group41_Wired_Martians.Models.Category
+@{
+   
+    ViewData["PageTitle"] = Model.CategoryID == 0 ? "Add Category-" : "Edit Category-";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+
+}
+
+
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title">
+            <div class="left">
+                <h1>Category</h1>
+            </div>
+            <div class="Right">
+                <a asp-action="Index" class="btn btn-primary">My Categories</a>
+            </div>
+        </div>
+    </div>
+</div>
+<form asp-action="AddandEdit" method="post" id="categoryForm">
+    <input asp-for="CategoryID" type="hidden" />
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-7">
+                        <h2 class="card-title">General</h2>
+                    </div>
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    <div class="form-group mb-4">
+                        <label class="form-label">
+                            Category Name<span class="text-danger">*</span>
+                        </label>
+                        <input asp-for="CategoryName" class="form-control" />
+                        <span asp-validation-for="CategoryName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group ">
+                        <label class="form-label">Description</label>
+                        <div class="form-group">
+                            <textarea asp-for="Description" class="form-control" rows="6" placeholder="Type here"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-md-7">
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <h2 class="card-title mb-7">Media</h2>
+                    <div class="mb-2">
+                        <label class="form-label">
+                            upload a img link <span class="text-danger">*</span>
+
+                        </label>
+                        <input asp-for="ImageURL" class="form-control" />
+                        <span asp-validation-for="ImageURL" class="text-danger"></span>
+                    </div>
+                    <div class="mb-2">
+
+                        <input asp-for="CreatedDate" type="hidden" class="form-control" />
+                        <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-7">
+                        <h2 class="card-title">Status</h2>
+                        <div class="p-2 h-100 bg-success rounded-circle"></div>
+                    </div>
+
+                    <div class="mb-1">
+                        <select asp-for="Status" class="form-control">
+                            <option value="Active">Active</option>
+                            <option value="Draft">Draft</option>
+                            <option value="Sheduled">Scheduled</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                    <div class="form-actions">
+                        <a asp-action="Index" class="btn bg-danger-subtle text-danger ms-6">Cancel</a>
+                        <button type="submit" value="Save" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+@section scripts{
+    <script>
+         $(document).ready(function () {
+            $('#categoryForm').submit(function (event) {
+                event.preventDefault();
+
+                 var categoryName = $('[name="CategoryName"]').val();
+
+                Swal.fire({
+                    title: 'Confirm Submit',
+                    html: `Are you sure you want to submit this Category?<br><strong>Category Name:</strong> ${categoryName}`,
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes',
+                    cancelButtonText: 'No',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            url: '@Url.Action("AddandEdit", "Category")',
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            success: function (response) {
+                                if (response.success) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Success',
+                                        text: response.message,
+                                        timer: 3000
+                                    }).then(function () {
+                                        window.location.href = '@Url.Action("Index", "Category")';
+                                    });
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Error',
+                                        html: 'Failed to save Category.<br>' + response.errors.join('<br>'),
+                                    });
+                                }
+                            },
+                            error: function () {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Error',
+                                    text: 'Failed to submit the form. Please try again.'
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+         });
+    </script>
+}
+    

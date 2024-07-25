@@ -1,0 +1,279 @@
+﻿@model Group41_Wired_Martians.viewmodels.InventoryProductColorViewModel
+
+@{
+
+    ViewData["PageTitle"] = Model.Inventory?.InventoryID == 0 ? "Add Inventory-" : "Edit Inventory-";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+    
+}
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title">
+            <div class="left">
+                <h1>Inventory And Variants</h1>
+                <ul class="breadcrumb">
+                </ul>
+
+            </div>
+            <div class="Right">
+                <a asp-action="InventoryList" class="btn btn-primary">My Inventory</a>
+            </div>
+        </div>
+    </div>
+</div>
+<form asp-action="Create" method="post" id="inventoryForm">
+    <input asp-for="@Model.Inventory.InventoryID" />
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-2" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="card-title">Inventory</h2>
+                        <span class="text-muted">Product Information.</span>
+                    </div>
+                   
+                    <div class="form-group mb-2">
+                        <label asp-for="Inventory.Location" class="control-label mb-1"><strong>Location</strong><span class="text-danger">*</span></label>
+                        <input asp-for="Inventory.Location" class="form-control" placeholder="Warehouse A" required />
+                        <span asp-validation-for="Inventory.Location" class="text-danger"></span>
+                        <div class="form-text">Provide The warehouse the Product Is stored.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Inventory.Damaged" class="control-label mb-1"><strong>Damages</strong><span class="text-danger">*</span></label>
+                        <input asp-for="Inventory.Damaged" id="Damaged" class="form-control" />
+                        <span asp-validation-for="Inventory.Damaged" class="text-danger"></span>
+                        <div class="form-text">Enter the Number Of Damaged goods on arrival.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="card-title">Variants</h2>
+                    </div>
+                    <div id="colors">
+                        @if (Model.ProductColors != null)
+                        {
+
+                            for (int i = 0; i < Model.ProductColors.Count; i++)
+                            {
+                                <div class="form-group color-group">
+                                    <input asp-for="@Model.ProductColors[i].ColorID" class="form-control" />
+                                    <input asp-for="@Model.ProductColors[i].InventoryID" class="form-control" ontext/>
+                                    <div class="row mb-2">
+                                        <div class="col-md-4">
+                                            <label class="control-label mb-1"><strong>Color Name</strong><span class="text-danger">*</span></label>
+                                            <input asp-for="@Model.ProductColors[i].ColorName" class="form-control" required />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label mb-1"><strong>Img URL</strong><span class="text-danger">*</span></label>
+                                            <input asp-for="@Model.ProductColors[i].Img" class="form-control" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label mb-1"><strong>Quantity</strong><span class="text-danger">*</span></label>
+                                            <input asp-for="@Model.ProductColors[i].Qty" class="form-control color-qty" id="Text" />
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label mb-1"><strong>Action</strong></label>
+                                            <button type="button" class="btn btn-danger btn-remove-color">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            
+                        }
+                    </div>
+                    <button type="button" class="btn btn-success" id="addColor">Add Color</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+         
+            <div class="card mb-3" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-7">
+                        <h2 class="card-title">Products</h2>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="SelectedProductId" class="control-label mb-1"><strong>Product</strong><span class="text-danger">*</span></label>
+                        <select asp-for="SelectedProductId" class="form-control" asp-items="@(new SelectList(Model.Products, "ProductID", "ProductName"))" id="SelectedProductId" required>
+                            <option value="">Select a product</option>
+                        </select>
+                        <span asp-validation-for="SelectedProductId" class="text-danger"></span>
+                        <div class="form-text">This Field Is Required.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Inventory.Brand" class="control-label mb-1"><strong>Brand Name</strong><span class="text-danger">*</span></label>
+                        <input asp-for="Inventory.Brand" id="brandDisplay" class="form-control" readonly />
+                        <span asp-validation-for="Inventory.Brand" class="text-danger"></span>
+                        <div class="form-text">View Only.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-7">
+                        <h2 class="card-title">Stock</h2>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Inventory.StockQuantity" class="control-label mb-1"><strong>Total Quantity</strong><span class="text-danger">*</span></label>
+                        <input asp-for="Inventory.StockQuantity" class="form-control" name="StockQuantity" id="StockQuantity" readonly />
+                        <span asp-validation-for="Inventory.StockQuantity" class="text-danger"></span>
+                        <div class="form-text">Auto Calculated.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Inventory.Availability" class="control-label mb-1"><strong>Available Stock</strong><span class="text-danger">*</span></label>
+                        <input asp-for="Inventory.Availability" class="form-control" id="Availability" readonly />
+                        <span asp-validation-for="Inventory.Availability" class="text-danger"></span>
+                        <div class="form-text">Auto Calculated.</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group d-grid my-1">
+                                <button type="button" onclick="window.history.back();" class="btn btn-outline-danger">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group d-grid my-1">
+                                <button type="submit" value="save" class="btn btn-primary">Create</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $('#SelectedProductId').change(function () {
+                var productId = $(this).val();
+                $.ajax({
+                    url:  '@Url.Action("GetProductBrand", "Inventory")',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: { productId: productId },
+                    success: function (data) {
+                        $('#brandDisplay').val(data.brand);
+                        $('#productNameDisplay').text(data.productName);
+                    }
+                });
+            });
+
+            var InventoryName = $('#productNameDisplay').text();
+
+
+            $('#inventoryForm').submit(function (event) {
+                event.preventDefault(); 
+
+                Swal.fire({
+                    title: 'Confirm Submit',
+                    html: `Are you sure you want to submit this Inventory?<br><strong>Inventory :</strong> ${InventoryName}`,
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes',
+                    cancelButtonText: 'No',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            url: '@Url.Action("Create", "Inventory")',
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            success: function (response) {
+                                if (response.success) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Success',
+                                        text: response.message,
+                                        timer: 3000
+                                    }).then(function () {
+                                        window.location.href = '@Url.Action("InventoryList", "Inventory")';
+                                    });
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Error',
+                                        html: 'Failed to save inventory.<br>' + response.errors.join('<br>'),
+                                    });
+                                }
+                            },
+                            error: function () {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Error',
+                                    text: 'Failed to submit the form. Please try again.'
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+         
+            $('#addColor').click(function () {
+                var index = $('#colors .color-group').length;
+                var html = `
+                            <div class="form-group color-group">
+                                                   <input type="text"  name ="Model.ProductColors[${index}].ColorID" class="form-control"  />
+                                        <input type="text" name ="Model.ProductColors[${index}].InventoryID" class="form-control"  />
+                                <div class="row mb-2">
+                                    <div class="col-md-4">
+                                        <label class="control-label mb-1"><strong>Color Name</strong><span class="text-danger">*</span></label>
+                                        <input type="text" name="ProductColors[${index}].ColorName" class="form-control" required />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label mb-1"><strong>Img URL</strong><span class="text-danger">*</span></label>
+                                        <input type="text" name="ProductColors[${index}].Img" class="form-control" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="control-label mb-1"><strong>Quantity</strong><span class="text-danger">*</span></label>
+                                        <input type="text" name="ProductColors[${index}].Qty" class="form-control color-qty" required />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-danger btn-remove-color">Remove</button>
+                                    </div>
+                                </div>
+                            </div>`;
+                $('#colors').append(html);
+            });
+
+ 
+            $('#colors').on('click', '.btn-remove-color', function () {
+                $(this).closest('.color-group').remove();
+            });
+
+
+            function updateCalculations() {
+                var totalQty = 0;
+
+                $('.color-qty').each(function () {
+                    totalQty += parseInt($(this).val()) || 0;
+                });
+
+            
+                $('#StockQuantity').val(totalQty);
+
+               
+                var damagedQty = parseInt($('#Damaged').val()) || 0;
+                var availability = totalQty - damagedQty;
+
+                $('#Availability').val(availability);
+            }
+
+     
+            $('#colors').on('input', '.color-qty', function () {
+                updateCalculations(); 
+            });
+
+            $('#Damaged').on('input', function () {
+                updateCalculations();
+            });
+        });
+    </script>
+}

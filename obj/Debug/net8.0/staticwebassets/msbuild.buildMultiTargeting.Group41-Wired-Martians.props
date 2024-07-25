@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Group41-Wired-Martians.props" />
+</Project>

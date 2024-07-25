@@ -1,0 +1,118 @@
+﻿@model IEnumerable<Group41_Wired_Martians.Models.Customer>
+
+@{
+    ViewData["Title"] = "Customer -";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+    
+}
+
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title">
+            <div class="left">
+                <h1>Customer Management</h1>
+                <ul class="breadcrumb">
+                </ul>
+                <div>
+                </div>
+            </div>
+            <div class="Right">
+                <a asp-action="CreateCustomer" class="btn btn-outline">New Customer</a>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="table" id="customers_table">
+    <section class="table__header">
+        <h1>Customers</h1>
+        <div class="input-group">
+            <input type="search" placeholder="Search Data...">
+
+        </div>
+        <div class="export__file">
+            <label for="export-file" class="export__file-btn" title="Export File"></label>
+            <input type="checkbox" id="export-file">
+            <div class="export__file-options">
+                <label>Export As &nbsp; &#10140;</label>
+                <label for="export-file" id="toPDF">PDF <img src="~/images/pdf.png" /></label>
+                <label for="export-file" id="toJSON">JSON <img src="~/images/export.png" /></label>
+                <label for="export-file" id="toCSV">CSV <img src="~/images/csv.png" /></label>
+                <label for="export-file" id="toEXCEL">EXCEL <img src="~/images/excel.png" /></label>
+            </div>
+        </div>
+    </section>
+    <section class="table__body">
+        <table>
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Address</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var customer in Model)
+                    {
+                    <tr>
+                        <td>@customer.FirstName</td>
+                        <td>@customer.LastName</td>
+                        <td>
+                            <ul>
+                                <li><span>AddressLine 1: </span>@customer.AddressLine1</li>
+                                <li><span>Surburb: </span>@customer.Surburb</li>
+                                <li><span>City: </span>@customer.City</li>
+                                <li><span>Code: </span>@customer.code</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <span class="custom-badge @(customer.Status == "Onboarding" ? "primary-badge" :
+                                 customer.Status == "Active" ? "success-badge" :
+                                 customer.Status == "Draft" ? "secondary-badge" :
+                                 customer.Status == "Scheduled" ? "info-badge" :
+                                 customer.Status == "Inactive" ? "warning-badge" :
+                                 "default-badge")">
+                                    @customer.Status
+                            </span>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-row justify-content-start">
+                                <a class="btn btn-sm no-a-decoration" href="@Url.Action("CreateCustomer", new { id = customer.CustomerID })">
+                                    <ion-icon name="pencil-outline"></ion-icon>
+                                </a>
+
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button type="button" class="btn btn-sm no-a-decoration" onclick="confirmDeletion('@customer.CustomerID', '@customer.FirstName', '@customer.LastName')">
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <form asp-action="Delete" method="post" id="CustomerForm-@customer.CustomerID" style="display: none;">
+                                    <input type="hidden" name="id" value="@customer.CustomerID" />
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<script>
+    function confirmDeletion(customerid, FirstName,LastName) {
+        Swal.fire({
+            title: 'Confirm Delete',
+            html: `Are you sure you want to delete the Customer: <strong class="text-danger">${FirstName}, ${LastName}</strong>?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'No, keep it'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById(`CustomerForm-${customerid}`).submit();
+
+            }
+        });
+    }
+</script>

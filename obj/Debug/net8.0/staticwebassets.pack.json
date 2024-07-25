@@ -1,0 +1,401 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Group41-Wired-Martians.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Group41-Wired-Martians.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Assets\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\Assets\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Assets\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\Assets\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Logo.png",
+      "PackagePath": "staticwebassets\\Images\\Logo.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer1.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer1.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer2.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer3.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer4.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer5.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer6.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer6.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer7.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer7.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\customer8.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\customer8.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\profile2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\profile2.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\profile3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\profile3.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\profile4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\profile4.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\Profile-Avatars\\profile5.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile-Avatars\\profile5.jpg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\csv.png",
+      "PackagePath": "staticwebassets\\Images\\csv.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\excel.png",
+      "PackagePath": "staticwebassets\\Images\\excel.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\excel.svg",
+      "PackagePath": "staticwebassets\\Images\\excel.svg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\export.png",
+      "PackagePath": "staticwebassets\\Images\\export.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\json.png",
+      "PackagePath": "staticwebassets\\Images\\json.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\pdf.png",
+      "PackagePath": "staticwebassets\\Images\\pdf.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\pdf.svg",
+      "PackagePath": "staticwebassets\\Images\\pdf.svg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\printer.svg",
+      "PackagePath": "staticwebassets\\Images\\printer.svg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\search-white.svg",
+      "PackagePath": "staticwebassets\\Images\\search-white.svg"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\Images\\search.png",
+      "PackagePath": "staticwebassets\\Images\\search.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\apple-touch-icon.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\css\\StockLiason.css",
+      "PackagePath": "staticwebassets\\css\\StockLiason.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\js\\StockLiason.js",
+      "PackagePath": "staticwebassets\\js\\StockLiason.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.1.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Group41-Wired-Martians.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Group41-Wired-Martians.props",
+      "PackagePath": "build\\Group41-Wired-Martians.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Group41-Wired-Martians.props",
+      "PackagePath": "buildMultiTargeting\\Group41-Wired-Martians.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Group41-Wired-Martians.props",
+      "PackagePath": "buildTransitive\\Group41-Wired-Martians.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

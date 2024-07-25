@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Group41_Wired_Martians.Models.Category>
+
+@{
+    ViewData["Title"] = "Category - ";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+}
+
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title d-flex justify-content-between align-items-center">
+            <div class="left">
+                <h1>Product Category List</h1>
+                <h6>View/Search product Category</h6>
+            </div>
+            <div>
+                <a asp-action="AddAndEdit" class="btn btn-primary"><ion-icon name="add-outline"></ion-icon>New Category</a>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="table" id="customers_table">
+    <section class="table__header">
+        <h1>Category</h1>
+        <div class="input-group">
+            <input type="search" placeholder="Search Data...">
+            
+        </div>
+        <div class="export__file">
+            <label for="export-file" class="export__file-btn" title="Export File"></label>
+            <input type="checkbox" id="export-file">
+            <div class="export__file-options">
+                <label>Export As &nbsp; &#10140;</label>
+                <label for="export-file" id="toPDF">PDF <img src="~/images/pdf.png" /></label>
+                <label for="export-file" id="toJSON">JSON <img src="~/images/export.png" /></label>
+                <label for="export-file" id="toCSV">CSV <img src="~/images/csv.png" /></label>
+                <label for="export-file" id="toEXCEL">EXCEL <img src="~/images/excel.png" /></label>
+            </div>
+        </div>
+    </section>
+    <section class="table__body">
+        <table>
+            <thead>
+                <tr>
+                    <th>Category Name </th>
+                    <th>Description </th>
+                    <th>Created Date </th>
+                    <th>Status </th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach (var Category in Model)
+                    {
+                    <tr>
+                        <td>@Category.CategoryName</td>
+                        <td>@Category.Description</td>
+                        <td>@Category.CreatedDate</td>
+                        <td>
+                            <span class="custom-badge @(Category.Status == "Onboarding" ? "primary-badge" :
+                                                              Category.Status == "Active" ? "success-badge" :
+                                                              Category.Status == "Draft" ? "warning-badge" :
+                                                              Category.Status == "Scheduled" ? "info-badge" :
+                                                              Category.Status == "Inactive" ? "secondary-badge" :
+                                                              "default-badge")">
+                                    @Category.Status
+                            </span>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-row justify-content-start">
+                                <a class="btn btn-sm no-a-decoration" href="@Url.Action("AddAndEdit", new { id = Category.CategoryID })">
+                                    <ion-icon name="pencil-outline"></ion-icon>
+                                </a>
+
+                                <button type="button" class="btn btn-sm no-a-decoration" onclick="confirmDeletion('@Category.CategoryID', '@Category.CategoryName')">
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                </button>
+
+                                <form asp-action="Delete" method="post" id="deleteForm-@Category.CategoryID" style="display: none;">
+                                    <input type="hidden" name="id" value="@Category.CategoryID" />
+                                </form>
+                            </div>
+
+                        </td>
+                    </tr>
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+@section scripts {
+    <script>
+        function confirmDeletion(categoryId, categoryName) {
+            Swal.fire({
+                title: 'Confirm Delete',
+                html: `Are you sure you want to delete the category: <strong class="text-danger">${categoryName}</strong>?`,
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Yes, delete it!',
+                cancelButtonText: 'No, keep it'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById(`deleteForm-${categoryId}`).submit();
+                }
+            });
+        }
+
+    </script>
+}

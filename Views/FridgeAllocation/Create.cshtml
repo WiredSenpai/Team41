@@ -1,0 +1,267 @@
+﻿@model Group41_Wired_Martians.viewmodels.FridgeAllocationViewModel
+
+@{
+    ViewData["PageTitle"] =Model.FridgeAllocation?.AllocationID == 0 ? "Make Allocations-" : "Edit Allocations-";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+}
+
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title">
+            <div class="left">
+                <h1>Inventory And Variants</h1>
+                <ul class="breadcrumb">
+                </ul>
+
+            </div>
+            <div class="Right">
+                <a asp-action="Index" class="btn btn-primary">My Allocations</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<form asp-action="Create" method="post" id="AllocationForm">
+     <input  asp-for="@Model.FridgeAllocation.AllocationID"  value="@Model.FridgeAllocation.AllocationID"/> 
+    <div class="card mb-2">
+        <div class="card-body">
+            <h2 class="card-title">Allocate Fridge</h2>
+
+            <div class="form-group">
+                <label asp-for="FridgeAllocation.CustomerID" class="control-label">Customer</label>
+                <select asp-for="FridgeAllocation.CustomerID" class="form-control">
+                    <option value="">Select Customer</option>                
+                        @foreach (var customer in ViewBag.Customers)
+                        {
+                            <option value="@customer.CustomerID">@customer.FirstName</option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="FridgeAllocation.CustomerID" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-2">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>
+                                Product Name
+                            </td>
+                            <td>
+                                Color (avilable stock)
+                            </td>
+                            <td>
+                                Quantity
+                            </td>
+                            <td>
+                                Action
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div id="productFields">
+                    @for (int i = 0; i < Model?.PurchaseItem?.Count; i++)
+                    {
+                        <div class="row mb-2">
+                            <div class="form-group">
+                                <input asp-for="@Model.PurchaseItem[i].ItemID"  />
+                                <input asp-for="@Model.PurchaseItem[i].AllocationID" />
+                                <input asp-for="@Model.PurchaseItem[i].ProductColors" />
+                            </div>
+                            <div class="col-md-4">
+                                <select asp-for="@Model.PurchaseItem[i].InventoryID" class="form-control product-select">
+                                    <option value="">Select Product</option>
+                                    @foreach (var inventory in Model.Inventory)
+                                    {
+                                        <option value="@inventory?.InventoryID">@inventory?.Product?.ProductName</option>
+                                    }
+                                </select>
+                                <span asp-validation-for="@Model.PurchaseItem[i].InventoryID" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-4">
+                                <select asp-for="@Model.PurchaseItem[i].ColorID" class="form-control color-select">
+                                    <option value="">Select Color</option>
+                                </select>
+                                <span asp-validation-for="@Model.PurchaseItem[i].ColorID" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-2">
+                                <input asp-for="@Model.PurchaseItem[i].Quantity" class="form-control" />
+                                <span asp-validation-for="@Model.PurchaseItem[i].Quantity" class="text-danger"></span>
+                            </div>
+                            <div class="d-grid col-md-2">
+                                <button type="button" class="btn btn-danger" onclick="removeProduct(@i)">Remove</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <button type="button" class="btn btn-success" onclick="addProduct()">Add Product</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body"> 
+            <h2 class="my-2">Buttons</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group d-grid my-1">
+                        <button type="button" onclick="window.history.back();" class="btn btn-outline-danger">Cancel</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group d-grid my-1">
+                        <button type="submit" value="save" class="btn btn-primary">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+@section Scripts {
+    <script>
+        var index = @Model?.PurchaseItem?.Count;
+
+        function addProduct() {
+            var row = `
+                        <div class="row mb-2">
+                                 <div class="form-group ">
+                                                <input name="Model.PurchaseItem[${index}].ItemID" />
+                                                    <input name="Model.PurchaseItem[${index}].AllocationID" />
+                                                    <input name="Model.PurchaseItem[${index}].ProductColors" />
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control product-select" name="PurchaseItems[${index}].InventoryID" required>
+                                    <option value="">Select Product</option>
+                                    
+        @foreach (var inventory in Model.Inventory)
+        {
+                                            <option value="@inventory.InventoryID">@inventory.Product?.ProductName</option>
+        }
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                        <select class="form-control color-select" name="PurchaseItems[${index}].ColorID" required>
+                                    <option value="">Select Color</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control" type="number" name="PurchaseItems[${index}].Quantity" />
+                            </div>
+                                    <div class="d-grid col-md-2">
+                                <button type="button" class="btn btn-danger" onclick="removeProduct(${index})">Remove</button>
+                            </div>
+                        </div>
+                    `;
+            $('#productFields').append(row);
+            index++;
+        }
+
+        function removeProduct(i) {
+            $(`#productFields .row:eq(${i})`).remove();
+        }
+
+
+        $(document).on('change', '.product-select', function () {
+            console.log('Product select change detected.');
+            var productId = $(this).val();
+            var colorDropdown = $(this).closest('.row').find('.color-select');
+            $.ajax({
+                type: 'GET',
+                url: '/FridgeAllocation/GetProductColors',
+                data: { productId: productId },
+                success: function (data) {
+                    console.log('Successfully fetched colors for product ID: ' + productId);
+                    colorDropdown.empty();
+                    
+                    $.each(data, function (index, item) {
+                        colorDropdown.append($('<option>').val(item.value).text(item.text));
+                    });
+                },
+                error: function () {
+                    console.error('Failed to retrieve colors for product ID: ' + productId);
+                    alert('Failed to retrieve colors for the selected product.');
+                }
+            });
+        });
+
+      
+        $('.product-select').each(function () {
+            var productId = $(this).val();
+            var colorDropdown = $(this).closest('.row').find('.color-select');
+            $.ajax({
+                type: 'GET',
+                url: '/FridgeAllocation/GetProductColors',
+                data: { productId: productId },
+                success: function (data) {
+                    console.log('Initial population: Successfully fetched colors for product ID: ' + productId);
+                    colorDropdown.empty();
+                   
+                    $.each(data, function (index, item) {
+                        colorDropdown.append($('<option>').val(item.value).text(item.text));
+                    });
+                },
+                error: function () {
+                    console.error('Initial population: Failed to retrieve colors for product ID: ' + productId);
+                    alert('Failed to retrieve colors for the selected product.');
+                }
+            });
+        });
+        $(document).ready(function () {
+            $('#AllocationForm').submit(function (event) {
+                event.preventDefault();
+
+                Swal.fire({
+                    title: 'Confirm Submit',
+                    html: `Are you sure you want to Make this Allocation?`,
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes',
+                    cancelButtonText: 'No',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            url: '@Url.Action("Create", "FridgeAllocation")',
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            success: function (response) {
+                                if (response.success) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Success',
+                                        text: response.message,
+                                        timer: 3000
+                                    }).then(function () {
+                                        window.location.href = '@Url.Action("Index", "FridgeAllocation")';
+                                    });
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Error',
+                                        html: 'Failed to save inventory.<br>' + response.errors.join('<br>'),
+                                    });
+                                }
+                            },
+                            error: function () {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Error',
+                                    text: 'Failed to submit the form. Please try again.'
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}

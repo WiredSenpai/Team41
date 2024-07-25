@@ -1,0 +1,190 @@
+﻿@model IEnumerable<Group41_Wired_Martians.Models.FridgeAllocation>
+
+@{
+    ViewData["Title"] = "Fridge Allocation- ";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+}
+
+
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title d-flex justify-content-between align-items-center">
+            <div class="left">
+                <h1>Fridge Allocations </h1>
+            </div>
+            <div>
+                <a asp-action="Create" class="btn btn-primary"><ion-icon name="add-outline"></ion-icon>New Allocation</a>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="table" id="customers_table">
+    <section class="table__header">
+        <h1>Allocations</h1>
+        <div class="input-group">
+            <input type="search" placeholder="Search Data...">
+
+        </div>
+        <div class="export__file">
+            <label for="export-file" class="export__file-btn" title="Export File"></label>
+            <input type="checkbox" id="export-file">
+            <div class="export__file-options">
+                <label>Export As &nbsp; &#10140;</label>
+                <label for="export-file" id="toPDF">PDF <img src="~/images/pdf.png" /></label>
+                <label for="export-file" id="toJSON">JSON <img src="~/images/export.png" /></label>
+                <label for="export-file" id="toCSV">CSV <img src="~/images/csv.png" /></label>
+                <label for="export-file" id="toEXCEL">EXCEL <img src="~/images/excel.png" /></label>
+            </div>
+        </div>
+    </section>
+    <section class="table__body">
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Contact Number</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model != null)
+                {
+                    @foreach(var Allocation in Model)
+                    {
+                        <tr>
+                            <td>@Allocation?.Customer?.FirstName @Allocation?.Customer?.LastName</td>
+                            <td>@Allocation?.Customer?.CustomerNumber</td>
+                            <td>@Allocation?.Customer?.CustomerEmail</td>
+                            <td>@Allocation?.AllocationStatus</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-outline-info view-details-btn no-a-decoration" data-id="@Allocation?.AllocationID" data-toggle="modal" data-target="#inventoryDetailsModal">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                                <a href="@Url.Action("Create", "FridgeAllocation", new { id = Allocation?.AllocationID })" class="btn btn-sm btn-outline-primary no-a-decoration">
+                                    <ion-icon name="pencil-outline"></ion-icon>
+                                </a>
+
+                                <button type="button" class="btn btn-sm btn-outline-danger no-a-decoration" onclick="confirmDeletion('@Allocation?.AllocationID','@Allocation?.Customer?.LastName')">
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                </button>
+                                <form id="deleteForm-@Allocation?.AllocationID" asp-action="Delete" asp-route-inventoryId="@Allocation?.AllocationID" method="post" style="display: none;">
+                                    <input type="hidden" name="id" value="@Allocation?.AllocationID" />
+                                </form>
+
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td>No Data To show</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</main>
+
+@if(Model != null)
+{
+    @foreach (var items in Model)
+    {
+        <div class="modal fade" id="inventoryDetailsModal" tabindex="-1" aria-labelledby="inventoryDetailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2 class="box-title mt-5">General Info</h2>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-product">
+                                    <tbody>
+                                        <tr>
+                                            <td width="390">Customer Name</td>
+                                            <td>@items?.Customer?.FirstName @items?.Customer?.LastName</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <dl class="row">
+                            <h2 class="box-title mt-5">Allocated Items</h2>
+                            <dd class="col-sm-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Name</th>
+                                            <th>Model</th>
+                                            <th>Color</th>
+                                            <th>Quantity</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @if (items?.PurchaseItems != null)
+                                        {
+                                            foreach (var ITEM in items.PurchaseItems)
+                                            {
+                                                <tr>
+                                                    <td>@ITEM.Inventory?.Product?.ProductName </td>
+                                                    <td>@ITEM.Inventory?.Product?.ModelNumber</td>
+                                                    <td>@ITEM.ProductColors.ColorName</td>
+                                                    <td>@ITEM.Quantity</td>
+                                                    <td>@ITEM.Allocation?.AllocationDate</td>
+                                                    <td>@ITEM.Allocation?.AllocationStatus</td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td colspan="2">No colors available</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+}
+else
+{
+    <tr>
+        <td>No Data to show</td>
+    </tr>
+}
+
+
+
+@section Scripts {
+    <script>
+        function confirmDeletion(allocationId, LastName) {
+            Swal.fire({
+                title: 'Are you sure?',
+                html: `Do you want to delete the inventory item for this Customer: <strong class="text-danger">${LastName}</strong>?`,
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    document.getElementById(`deleteForm-${allocationId}`).submit();
+                }
+            });
+        }
+    </script>
+}

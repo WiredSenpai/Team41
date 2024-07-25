@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Group41-Wired-Martians.props" />
+</Project>

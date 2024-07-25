@@ -1,0 +1,114 @@
+﻿@model IEnumerable<Group41_Wired_Martians.Models.Product>
+@{
+    ViewData["Title"] = "ProductList";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+
+}
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title">
+            <div class="left">
+                <h1>Products</h1>
+                <ul class="breadcrumb">
+                </ul>
+
+            </div>
+            <div class="Right">
+                <a type="button" asp-action="AddandEdit" class="btn btn-primary">Create Product</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="table" id="customers_table">
+    <section class="table__header">
+        <h1>Store Products.</h1>
+        <div class="input-group">
+            <input type="search" placeholder="Search Data...">
+
+        </div>
+        <div class="export__file">
+            <label for="export-file" class="export__file-btn" title="Export File"></label>
+            <input type="checkbox" id="export-file">
+            <div class="export__file-options">
+                <label>Export As &nbsp; &#10140;</label>
+                <label for="export-file" id="toPDF">PDF <img src="~/images/pdf.png" /></label>
+                <label for="export-file" id="toJSON">JSON <img src="~/images/export.png" /></label>
+                <label for="export-file" id="toCSV">CSV <img src="~/images/csv.png" /></label>
+                <label for="export-file" id="toEXCEL">EXCEL <img src="~/images/excel.png" /></label>
+            </div>
+        </div>
+    </section>
+    <section class="table__body">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name </th>
+                    <th>Brand </th>
+                    <th>Category</th>
+                    <th>Supplier</th>
+                    <th>Model </th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr scope="row">
+                        <td>@product.ProductName</td>
+                        <td>@product.Brand</td>
+                        <td>@product.Category.CategoryName</td>
+                        <td>@product.Supplier.SupplierName</td>
+                        <td>@product.ModelNumber</td>
+                        <td>
+                            <span class="custom-badge @(product.Status == "Onboarding" ? "primary-badge" :
+                                 product.Status == "Active" ? "success-badge" :
+                                 product.Status == "Draft" ? "secondary-badge" :
+                                 product.Status == "Scheduled" ? "info-badge" :
+                                 product.Status == "Inactive" ? "warning-badge" :
+                                 "default-badge")">
+                                @product.Status
+                            </span>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-row justify-content-start">
+                                <a class="btn btn-sm no-a-decoration" href="@Url.Action("AddandEdit", new { id = product.ProductID })">
+                                    <ion-icon name="pencil-outline"></ion-icon>
+                                </a>
+                                <button type="button" class="btn btn-sm no-a-decoration" onclick="confirmDeletion('@product.ProductID', '@product.ProductName')">
+                                    <ion-icon name="trash-outline"></ion-icon>
+                                </button>
+
+                                <form asp-action="Delete" method="post" id="deleteForm-@product.ProductID" style="display: none;">
+                                    <input type="hidden" name="id" value="@product.ProductID" />
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</main>
+
+
+<script>
+
+    function confirmDeletion(productid,ProductName) {
+        Swal.fire({
+            title: 'Confirm Delete',
+            html: `Are you sure you want to delete the inventory: <strong class="text-danger">${ProductName}</strong>?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'No, keep it'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById(`deleteForm-${productid}`).submit();
+            }
+        });
+    }
+    
+
+</script>

@@ -1,0 +1,442 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\fridgeallocation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\fridgeallocation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\inventory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\inventory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\viewmodels\\fridgeallocationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:viewmodels\\fridgeallocationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\viewmodels\\inventoryproductcolorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:viewmodels\\inventoryproductcolorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725075336_nulls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240725075336_nulls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\purchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\purchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\productcolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\productcolors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\fridgeallocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\fridgeallocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\fridgeallocation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\fridgeallocation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\controllers\\fridgeallocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:controllers\\fridgeallocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\migrations\\20240725072441_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:migrations\\20240725072441_new.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\inventory\\inventorylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\inventory\\inventorylist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\areas\\identity\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:areas\\identity\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725063717_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240725063717_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\migrations\\20240725061827_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:migrations\\20240725061827_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwDMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-25T08:00:41.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductColors.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\ProductColors.cs",
+              "RelativeDocumentMoniker": "Models\\ProductColors.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\ProductColors.cs",
+              "RelativeToolTip": "Models\\ProductColors.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:06:18.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FridgeAllocation.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\FridgeAllocation.cs",
+              "RelativeDocumentMoniker": "Models\\FridgeAllocation.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\FridgeAllocation.cs",
+              "RelativeToolTip": "Models\\FridgeAllocation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:07:14.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Inventory\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\Create.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Inventory\\Create.cshtml",
+              "RelativeToolTip": "Views\\Inventory\\Create.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAD0AAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T13:01:49.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:40:26.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Inventory.cs",
+              "RelativeDocumentMoniker": "Models\\Inventory.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Inventory.cs",
+              "RelativeToolTip": "Models\\Inventory.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA7wBUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:07:57.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InventoryController.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "Controllers\\InventoryController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAArwD4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T13:03:58.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InventoryProductColorViewModel.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\InventoryProductColorViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InventoryProductColorViewModel.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\InventoryProductColorViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InventoryProductColorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T13:03:47.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\FridgeAllocation\\Create.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Create.cshtml",
+              "RelativeToolTip": "Views\\FridgeAllocation\\Create.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAEQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T13:11:45.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FridgeAllocationViewModel.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\FridgeAllocationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\FridgeAllocationViewModel.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\FridgeAllocationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\FridgeAllocationViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:39:03.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240725075336_nulls.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725075336_nulls.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240725075336_nulls.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725075336_nulls.cs",
+              "RelativeToolTip": "Migrations\\20240725075336_nulls.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:53:36.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FridgeAllocationController.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\FridgeAllocationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FridgeAllocationController.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\FridgeAllocationController.cs",
+              "RelativeToolTip": "Controllers\\FridgeAllocationController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwBsAAACnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:53:47.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\FridgeAllocation\\Index.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Index.cshtml",
+              "RelativeToolTip": "Views\\FridgeAllocation\\Index.cshtml",
+              "ViewState": "AQIAALEAAAAAAAAAAAAiwIgAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T06:26:03.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PurchaseItem.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\PurchaseItem.cs",
+              "RelativeDocumentMoniker": "Models\\PurchaseItem.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\PurchaseItem.cs",
+              "RelativeToolTip": "Models\\PurchaseItem.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:06:08.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240725072441_new.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725072441_new.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240725072441_new.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725072441_new.cs",
+              "RelativeToolTip": "Migrations\\20240725072441_new.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:24:46.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T07:25:17.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InventoryList.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Inventory\\InventoryList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\InventoryList.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Inventory\\InventoryList.cshtml",
+              "RelativeToolTip": "Views\\Inventory\\InventoryList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T06:51:21.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Areas\\Identity\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Areas\\Identity\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Areas\\Identity\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAKYBAAAAAAAAAAAAANkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:56:04.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240725063717_update.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725063717_update.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240725063717_update.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725063717_update.cs",
+              "RelativeToolTip": "Migrations\\20240725063717_update.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:37:17.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20240725061827_dbcontext.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725061827_dbcontext.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240725061827_dbcontext.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Migrations\\20240725061827_dbcontext.cs",
+              "RelativeToolTip": "Migrations\\20240725061827_dbcontext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:18:31.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:08:03.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T13:29:50.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:07:47.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:55:53.092Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\fridgeallocation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\fridgeallocation\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\controllers\\fridgeallocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:controllers\\fridgeallocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\viewmodels\\fridgeallocationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:viewmodels\\fridgeallocationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\purchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\purchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\viewmodels\\inventoryproductcolorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:viewmodels\\inventoryproductcolorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\models\\fridgeallocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:models\\fridgeallocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\fridgeallocation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\fridgeallocation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\inventory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\inventory\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|d:\\group41-wired-martians\\group41-wired-martians\\views\\customer\\allcustomers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C97E83D8-67DB-49E9-AF98-4E72A6F1CCB6}|Group41-Wired-Martians.csproj|solutionrelative:views\\customer\\allcustomers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T12:19:19.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PurchaseItem.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\PurchaseItem.cs",
+              "RelativeDocumentMoniker": "Models\\PurchaseItem.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\PurchaseItem.cs",
+              "RelativeToolTip": "Models\\PurchaseItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:39:09.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\FridgeAllocation\\Create.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Create.cshtml",
+              "RelativeToolTip": "Views\\FridgeAllocation\\Create.cshtml",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAAAI8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T11:33:30.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AllCustomers.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Customer\\AllCustomers.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\AllCustomers.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Customer\\AllCustomers.cshtml",
+              "RelativeToolTip": "Views\\Customer\\AllCustomers.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T11:33:18.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FridgeAllocation.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\FridgeAllocation.cs",
+              "RelativeDocumentMoniker": "Models\\FridgeAllocation.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Models\\FridgeAllocation.cs",
+              "RelativeToolTip": "Models\\FridgeAllocation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:28:32.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InventoryController.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "Controllers\\InventoryController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwDoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:23:08.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FridgeAllocationController.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\FridgeAllocationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FridgeAllocationController.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Controllers\\FridgeAllocationController.cs",
+              "RelativeToolTip": "Controllers\\FridgeAllocationController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAcwDAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:23:07.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventoryProductColorViewModel.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\InventoryProductColorViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InventoryProductColorViewModel.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\InventoryProductColorViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InventoryProductColorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:00:37.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FridgeAllocationViewModel.cs",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\FridgeAllocationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\FridgeAllocationViewModel.cs",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\ViewModels\\FridgeAllocationViewModel.cs",
+              "RelativeToolTip": "ViewModels\\FridgeAllocationViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T11:54:31.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Inventory\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Inventory\\Create.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\Inventory\\Create.cshtml",
+              "RelativeToolTip": "Views\\Inventory\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T11:43:41.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\FridgeAllocation\\Index.cshtml",
+              "ToolTip": "D:\\Group41-Wired-Martians\\Group41-Wired-Martians\\Views\\FridgeAllocation\\Index.cshtml",
+              "RelativeToolTip": "Views\\FridgeAllocation\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T11:43:58.701Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+﻿@model Group41_Wired_Martians.Models.Inventory
+
+
+<dl class="row">
+    <dt class="col-sm-3">Product Name</dt>
+    <dd class="col-sm-9">@Model?.Product?.ProductName ?? "N/A"</dd>
+
+    <dt class="col-sm-3">Location</dt>
+    <dd class="col-sm-9">@Model?.Location ?? "N/A"</dd>
+
+    <dt class="col-sm-3">Brand</dt>
+    <dd class="col-sm-9">@Model?.Brand ?? "N/A"</dd>
+
+    <dt class="col-sm-3">Stock Quantity</dt>
+    <dd class="col-sm-9">@Model?.StockQuantity ?? "N/A"</dd>
+
+    <dt class="col-sm-3">Damaged</dt>
+    <dd class="col-sm-9">@Model?.Damaged ?? "N/A"</dd>
+
+    <dt class="col-sm-3">Availability</dt>
+    <dd class="col-sm-9">@Model?.Availability ?? "N/A"</dd>
+
+    <dt class="col-sm-3">Product Colors</dt>
+    <dd class="col-sm-9">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model?.ProductColors != null)
+                {
+                    foreach (var color in Model.ProductColors)
+                    {
+                        <tr>
+                            <td>@color.ColorName ?? "N/A"</td>
+                            <td>@color.Qty ?? "N/A"</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="2">No colors available</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </dd>
+</dl>

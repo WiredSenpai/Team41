@@ -1,0 +1,238 @@
+﻿@model Group41_Wired_Martians.Models.Product
+
+@{
+    ViewData["PageTitle"] = Model.ProductID == 0 ? "Products-New Products-" : "Products-Edit Products-";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+}
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title">
+            <div class="left align-items-space-between ">
+                <h1>Proucts</h1>
+            </div>
+            <div class="Right">
+                <a asp-action="ProductList" class="btn btn-primary">My Products</a>
+            </div>
+        </div>
+    </div>
+</div>
+<form asp-action="AddandEdit" method="post" id="ProductsForm" enctype="multipart/form-data">
+    <input asp-for="ProductID" type="hidden" />
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-7">
+                        <h2 class="card-title">General</h2>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="ProductName" class="control-label mb-1"><strong>Product Name</strong><span class="text-danger">*</span></label>
+                        <input asp-for="ProductName" class="form-control" placeholder="Hisence Bar 358D" id="Text" required />
+                        <span asp-validation-for="ProductName" class="text-danger"></span>
+                        <div class="form-text" id="Text">Product Name is Require.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Brand" class="control-label mb-1"><strong>Brand</strong><span class="text-danger">*</span></label>
+                        <input asp-for="Brand" class="form-control" placeholder="Hisense" id="Text" required />
+                        <span asp-validation-for="Brand" class="text-danger"></span>
+                        <div class="form-text" id="Text">Enter The Company Name For Product.</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h2 class="card-title mb-1">Media</h2>
+                    </div>
+                    <label asp-for="ImageFile" class="control-label mb-1"><strong>File Upload</strong></label>
+                    <div class="custom2-file-input mb-1">
+                        <input asp-for="ImageFile" type="file" />
+                        <span>Choose a file...</span>
+                    </div>
+                    <span class="warning-msg text-muted mb-3">NB!! Choose only <span class="text-danger"><strong>ONE OPTION</strong></span> here to Avoid image repeatation</span>
+                    <div class="form-group mb-2">
+                        <label asp-for="ImgUrl" class="control-label mb-1"><strong>Image Link</strong><span class="text-danger">*</span></label>
+                        <input asp-for="ImgUrl" class="form-control" placeholder="Hisense" id="Text" />
+                        <span asp-validation-for="ImgUrl" class="text-danger"></span>
+                        <div class="form-text" id="Text">Upload your image Link Here.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="card-title">Product Details</h2>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="ModelNumber" class="control-label mb-1"><strong>Model Number</strong><span class="text-danger">*</span></label>
+                        <input asp-for="ModelNumber" class="form-control" placeholder="RD47388XY" id="Text" required />
+                        <span asp-validation-for="ModelNumber" class="text-danger"></span>
+                        <div class="form-text" id="Text">Model Number Is Required.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Capacity" class="control-label mb-1"><strong>Capacity</strong><span class="text-danger">*</span></label>
+                        <input asp-for="Capacity" class="form-control" placeholder="145 Litres" id="Text" required />
+                        <span asp-validation-for="Capacity" class="text-danger"></span>
+                        <div class="form-text" id="Text">Enter Capacity In Litres.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="EnergyRating" class="control-label mb-1"><strong>Energy Rating</strong><span class="text-danger">*</span></label>
+                        <input asp-for="EnergyRating" class="form-control" placeholder="Grade A++" id="Text" required />
+                        <span asp-validation-for="EnergyRating" class="text-danger"></span>
+                        <div class="form-text" id="Text">Provide Grade From A+ to D.</div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label asp-for="Dimensions" class="control-label mb-1"><strong>Fridge Dimensions<span class="text-danger">*</span></strong></label>
+                        <input asp-for="Dimensions" class="form-control" required placeholder="56x351x4" id="Text" />
+                        <span asp-validation-for="Dimensions" class="text-danger"></span>
+                        <div class="form-text" id="Text">Dimenstions Are Required.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h2 class="card-title">Thumbnail</h2>
+                    </div>
+                    <label class="control-label mb-1">Thumbnail Image</label>
+                    <div class="custom-file-input">
+                        <input asp-for="ImgThumbnail" type="file" />
+                        <span>Choose a file...</span>
+                    </div>
+                    <p class="text-msg text-center mb-1">
+                        Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted.
+                    </p>
+                </div>
+            </div>
+            <div class="card mb-3" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-7">
+                        <h2 class="card-title">Status</h2>
+                        <div class="p-2 h-100 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                        <label asp-for="Status" class="control-label mb-1"><strong>Status</strong><span class="text-danger">*</span></label>
+                        <select asp-for="Status" class="form-control" id="Text" required>
+                            <option value="Active">Active</option>
+                            <option value="Draft">Draft</option>
+                            <option value="Sheduled">Sheduled</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                        <div class="form-text" id="Text">Specify If the Product Is on Sale or no Longer Active.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" id="card-Universal">
+                <div class="card-body">
+                    <h2 class="card-title ">Supplier</h2>
+                    <div class="form-group mb-2">
+                        <label asp-for="SupplierID" class="control-label mb-1"><strong>Supplier</strong><span class="text-danger">*</span></label>
+                        <select asp-for="SupplierID" class="form-control" asp-items="ViewBag.SupplierID" id="Text"></select>
+                        <span asp-validation-for="SupplierID" class="text-danger"></span>
+                        <div class="form-text" id="Text">Choose Supplier Of Product.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" id="card-Universal">
+                <div class="card-body">
+                    <h2 class="card-title ">Category Details</h2>
+                    <div class="form-group mb-2">
+                        <label asp-for="Category" class="control-label mb-1"><strong>Category</strong><span class="text-danger">*</span></label>
+                        <select asp-for="CategoryID" class="form-control" asp-items="ViewBag.CategoryID" id="Text" required></select>
+                        <span asp-validation-for="CategoryID" class="text-danger"></span>
+                        <div class="form-text" id="Text">This Field Is Required.</div>
+                    </div>
+                    <a></a>
+                    <a href="@Url.Action("AddandEdit", "StockLiason" )" type="button" class="btn btn-primary"><ion-icon name="add-outline"></ion-icon>New Category</a>
+                </div>
+            </div>
+            <div class="card mb-3" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="card-title ">Warranty</h2>
+                    </div>
+                    <div>
+                        <label asp-for="Warranty" class="control-label mb-1"><strong>Warranty</strong></label>
+                        <select asp-for="Warranty" class="form-control" id="Text">
+                            <option value="6 Months">6 Months</option>
+                            <option value="12 Months">12 Months</option>
+                            <option value="18 Months">18 Months</option>
+                            <option value="32 Months">32 Months</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                        <div class="form-text" id="Text">Specify If the Product Is on Sale or no Longer Active.</div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="form-actions">
+                            <a asp-action="ProductList" class="btn bg-danger-subtle text-danger ms-6">Cancel</a>
+                            <button type="submit" value="Save" class="btn btn-primary">
+                                Save changes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
+@section scripts {
+   <script>
+        $(document).ready(function () {
+
+            $('#ProductsForm').submit(function (event) {
+                event.preventDefault();
+
+                var productname = $('[name="ProductName"]').val();
+
+                Swal.fire({
+                    title: 'Confirm Submit',
+                    html: `Are you sure you want to submit this Product?<br><strong></strong> ${productname}`,
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes',
+                    cancelButtonText: 'No',
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            url: '@Url.Action("AddandEdit", "Product")',
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            success: function (response) {
+                                if (response.success) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Success',
+                                        text: response.message,
+                                        timer: 3000
+                                    }).then(function () {
+                                        window.location.href = '@Url.Action("ProductList", "Product")';
+                                    });
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Error',
+                                        html: 'Failed to save Product.<br>' + response.errors.join('<br>'),
+                                    });
+                                }
+                            },
+                            error: function () {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Error',
+                                    text: 'Failed to submit the form. Please try again.'
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+
+        });
+    </script>
+}

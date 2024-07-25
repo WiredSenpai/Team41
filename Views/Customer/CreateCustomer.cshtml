@@ -1,0 +1,224 @@
+﻿@model Group41_Wired_Martians.Models.Customer
+
+@{
+
+    ViewData["PageTitle"] = Model.CustomerID == 0 ? "Add Customer" : "Edit Customer";
+    Layout = "~/Views/Shared/_StockLiason.cshtml";
+
+}
+<div class="card mb-3" id="card-Universal">
+    <div class="card-body">
+        <div class="head-title">
+            <div class="left">
+                <h1>Customer Management</h1>
+                <ul class="breadcrumb">
+                </ul>
+            </div>
+            <div class="Right">
+                <a asp-action="AllCustomers" class="btn btn-primary">My Customers</a>
+            </div>
+        </div>
+    </div>
+</div>
+<form asp-action="CreateCustomer" method="post" id="CustomersForm">
+    <input asp-for="CustomerID" type="hidden" />
+
+    <div class="card" id="card-Universal">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 " id="customer-info">
+                    <div class="d-flex justify-content-between align-items-center mb-7">
+                        <h2 class="Custom-title">Customer Information</h2>
+                    </div>
+                    <div id="customer-picture">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-2">
+                                <label asp-for="FirstName" class="control-label mb-1"><strong>FirstName</strong><span class="text-danger">*</span></label>
+                                <input asp-for="FirstName" class="form-control" placeholder="John" id="Text" required />
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                                <div class="form-text" id="Text">Customers Name.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-2">
+                                <label asp-for="LastName" class="control-label mb-1"><strong>Last Name</strong><span class="text-danger">*</span></label>
+                                <input asp-for="LastName" class="form-control" placeholder="Doe" id="Text" required />
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                                <div class="form-text" id="Text">Customers Surname.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mb-2">
+                                <label asp-for="CustomerNumber" class="control-label mb-1"><strong>Contact Number</strong><span class="text-danger">*</span></label>
+                                <input asp-for="CustomerNumber" class="form-control" placeholder="+27 (683) 43896" id="Text" required />
+                                <span asp-validation-for="CustomerNumber" class="text-danger"></span>
+                                <div class="form-text" id="Text">Provide CellPhone Number.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mb-2">
+                                <label asp-for="CustomerEmail" class="control-label mb-1"><strong>Email</strong></label>
+                                <input asp-for="CustomerEmail" class="form-control" placeholder="JohnDoe@email.com" id="Text" />
+                                <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+                                <div class="form-text" id="Text">Provide Email.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card " id="card-Universal">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-between align-items-center mb-7">
+                        <h2 class="Custom-title">Address/Delivery</h2>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="form-group mb-2">
+                            <label asp-for="AddressLine1" class="control-label mb-1"><strong>Address Line1</strong><span class="text-danger">*</span></label>
+                            <input asp-for="AddressLine1" class="form-control" placeholder="2 myrtle Avenue" id="Text" required />
+                            <span asp-validation-for="AddressLine1" class="text-danger"></span>
+                            <div class="form-text" id="Text">This Field Is Required.</div>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label asp-for="Surburb" class="control-label mb-1"><strong>Surburb</strong><span class="text-danger">*</span></label>
+                            <input asp-for="Surburb" class="form-control" placeholder="North End" id="Text" required />
+                            <span asp-validation-for="Surburb" class="text-danger"></span>
+                            <div class="form-text" id="Text">This Field Is Required.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-2">
+                                <label asp-for="City" class="control-label mb-1"><strong>City</strong><span class="text-danger">*</span></label>
+                                <select asp-for="City" class="form-control" required>
+                                    <option value="">Select a city...</option>
+                                    <option value="Johannesburg">Johannesburg</option>
+                                    <option value="Eastern Cape">Eastern Cape</option>
+                                    <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                                    <option value="Cape Town">Cape Town</option>
+                                    <option value="Northern Cape">Northern Cape</option>
+                                    <option value="Gauteng">Gauteng</option>
+                                    <option value="Limpopo">Limpopo</option>
+                                    <option value="Mpumalanga">Mpumalanga</option>
+                                   
+                                </select>
+                                <span asp-validation-for="City" class="text-danger"></span>
+                                <div class="form-text">Please select a city from the list.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-2">
+                                <label asp-for="code" class="control-label mb-1"><strong>City Code</strong><span class="text-danger">*</span></label>
+                                <input asp-for="code" class="form-control" placeholder="6001" id="Text" required />
+                                <span asp-validation-for="code" class="text-danger"></span>
+                                <div class="form-text" id="Text">This Field Is Required.</div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-" id="card-Universal">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <h2 class="card-title">Status</h2>
+                        <div class="p-2 h-100 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                        <select asp-for="Status" class="form-control" required>
+                            <option value="Active">Active</option>
+                            <option value="Draft">Draft</option>
+                            <option value="Sheduled">Sheduled</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-actions">
+                        <a asp-action="Index" class="btn bg-danger-subtle text-danger ms-6">Cancel</a>
+                        <button type="submit" value="Save" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#CustomersForm').submit(function (event) {
+                event.preventDefault();
+
+                var firstName = $('[name="FirstName"]').val();
+                var lastName = $('[name="LastName"]').val();
+
+                var alertContent = `
+                            <p><strong></strong> ${firstName}</p>
+                            <p><strong></strong> ${lastName}</p>
+                        `;
+
+                Swal.fire({
+                    title: 'Confirm Submit',
+                    html: `Are you sure you want to add this customer?: <br>${alertContent}`,
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes',
+                    cancelButtonText: 'No'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        $.ajax({
+                            url: '@Url.Action("CreateCustomer", "Customer")',
+                            type: 'POST',
+                            data: $(this).serialize(),
+                            success: function (response) {
+                                if (response.success) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Success',
+                                        text: response.message,
+                                        timer: 3000
+                                    }).then(function () {
+                                        window.location.href = '@Url.Action("AllCustomers", "Customer")';
+                                    });
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Error',
+                                        html: 'Failed to add customer.<br>' + response.message,
+                                    });
+                                }
+                            },
+                            error: function () {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Error',
+                                    text: 'Failed to submit the form. Please try again.'
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+}
